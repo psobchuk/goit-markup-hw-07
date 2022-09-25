@@ -507,7 +507,7 @@ img {
 }
 
 /* Заголовки секцій */
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -532,14 +532,15 @@ img {
 }
 
 /* Особливості */
-.features.section {
+.features {
   padding-bottom: 0;
 }
-.features.list {
+
+.features__list {
   --items: 4;
 }
 
-.features-bg {
+.features__bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,7 +551,7 @@ img {
   border-radius: 4px;
 }
 
-.item-title {
+.features__title {
   display: block;
 
   font-size: var(--main-txt-size);
@@ -561,7 +562,7 @@ img {
   margin-bottom: 20px;
 }
 
-.features-item-desc {
+.features__desc {
   font-size: var(--main-txt-size);
   line-height: calc(24 / 14);
   letter-spacing: var(--ls-3);
@@ -569,11 +570,11 @@ img {
 }
 
 /* Чим ми займаємося */
-.services-list-item {
+.services__item {
   position: relative;
 }
 
-.services-title > p {
+.services__title > p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,7 +595,7 @@ img {
 }
 
 /* Наша команда */
-.team.section {
+.team {
   background-color: var(--light-bgc);
 }
 
@@ -755,6 +756,15 @@ img {
 }
 
 .dark-bg-title {
+  display: block;
+
+  font-size: var(--main-txt-size);
+  line-height: var(--line-h);
+  letter-spacing: var(--ls-3);
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
   color: var(--light-txt-color);
 }
 
