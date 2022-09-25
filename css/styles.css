@@ -109,7 +109,6 @@ img {
   letter-spacing: var(--ls-3);
   color: var(--accent-txt-color);
 
-  margin-right: 93px;
   transition: color 250ms var(--timing-function);
 }
 
@@ -135,12 +134,16 @@ img {
   align-items: center;
 }
 
+.header__logo {
+  margin-right: 93px;
+}
+
 .nav {
   margin-right: auto;
 }
 
 .nav__list,
-.header-contacts-list {
+.header__contacts {
   display: flex;
 }
 
@@ -148,7 +151,7 @@ img {
   margin-left: 50px;
 }
 
-.header-link {
+.nav__link {
   display: block;
   padding: 28px 0;
   font-weight: 500;
@@ -161,7 +164,7 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header-link::after {
+.nav__link::after {
   content: "";
   display: block;
   width: 100%;
@@ -175,13 +178,13 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.header-link.current::after,
-.header-link:hover::after,
-.header-link:focus::after {
+.nav__link.current::after,
+.nav__link:hover::after,
+.nav__link:focus::after {
   opacity: 1;
 }
 
-.header-contacts-list {
+.header__contacts {
   font-weight: 500;
   font-size: var(--main-txt-size);
   line-height: var(--line-h);
@@ -189,25 +192,25 @@ img {
   color: var(--contacts-txt-color);
 }
 
-.header-contacts-item {
+.header__item {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
 
-.header-contacts-item:last-child {
+.header__item:last-child {
   margin-right: 0;
 }
 
-.contacts-icon {
+.header__icon {
   margin-right: 10px;
 }
 
-.header-contacts-item > .header-contacts-item:last-child {
+.header__item > .header__item:last-child {
   margin-right: 0;
 }
 
-.header-contacts-link {
+.header__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -217,11 +220,11 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header-link.current,
-.header-link:hover,
-.header-link:focus,
-.header-contacts-link:hover,
-.header-contacts-link:focus {
+.nav__link.current,
+.nav__link:hover,
+.nav__link:focus,
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-txt-color);
 }
 
@@ -713,7 +716,7 @@ img {
 
 .footer > .container {
   display: flex;
-  gap: 94px;
+  gap: 93px;
   align-items: baseline;
 }
 
