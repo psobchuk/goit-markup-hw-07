@@ -817,14 +817,14 @@ img {
   |============================
 */
 /* Фільтр проектів */
-.projects-filter-list {
+.projects__filter {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.category-button {
+.projects__button {
   background-color: var(--light-bgc);
   font-family: inherit;
   font-weight: 500;
@@ -842,9 +842,9 @@ img {
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.category-button.current-button,
-.category-button:hover,
-.category-button:focus {
+.projects__button.current-button,
+.projects__button:hover,
+.projects__button:focus {
   background-color: var(--accent-bgc);
   color: var(--light-txt-color);
   cursor: pointer;
@@ -854,24 +854,24 @@ img {
 }
 
 /* Проекти */
-.project-link {
+.projects__link {
   display: block;
   text-decoration: none;
 }
 
-.project-link:hover,
-.project-link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-.project-desc {
+.projects__desc {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: none;
 }
 
-.project-name {
+.projects__name {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: var(--ls-6);
@@ -879,13 +879,13 @@ img {
   color: var(--main-txt-color);
 }
 
-.project-type {
+.projects__type {
   line-height: calc(30 / 16);
   letter-spacing: var(--ls-3);
   color: var(--secondary-txt-color);
 }
 
-.project-thumb {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -909,11 +909,11 @@ img {
     opacity 250ms var(--timing-function);
 }
 
-.project-card:hover .overlay {
+.projects__card:hover .overlay {
   transform: translateY(0%);
 }
 
-.overlay-desc {
+.overlay__desc {
   color: var(--light-txt-color);
   font-size: 18px;
   line-height: calc(28 / 18);
