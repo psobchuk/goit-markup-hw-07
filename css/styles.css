@@ -127,14 +127,6 @@ img {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-.mb10 {
-  margin-bottom: 10px;
-}
-
-.mb20 {
-  margin-bottom: 20px;
-}
-
 /* Логотип */
 .logo {
   font-family: var(--secondary-font);
@@ -193,10 +185,6 @@ img {
 
 .header__icon {
   margin-right: 10px;
-}
-
-.header__item > .header__item:last-child {
-  margin-right: 0;
 }
 
 .header__link {
@@ -288,7 +276,7 @@ img {
   background-size: cover;
 }
 
-.hero > div {
+.hero > .container {
   width: 696px;
 }
 
@@ -557,7 +545,7 @@ img {
   align-items: center;
 
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--light-bgc);
   margin-bottom: 30px;
   border-radius: 4px;
 }
