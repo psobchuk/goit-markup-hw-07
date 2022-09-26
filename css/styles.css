@@ -68,6 +68,7 @@ img {
   display: block;
 }
 
+/* Універсальні блоки */
 .list {
   list-style: none;
   margin: 0;
@@ -178,7 +179,7 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.nav__link.current::after,
+.nav__link--current::after,
 .nav__link:hover::after,
 .nav__link:focus::after {
   opacity: 1;
@@ -220,7 +221,7 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.nav__link.current,
+.nav__link--current,
 .nav__link:hover,
 .nav__link:focus,
 .header__link:hover,
@@ -842,7 +843,7 @@ img {
     color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.projects__button.current-button,
+.projects__button--current,
 .projects__button:hover,
 .projects__button:focus {
   background-color: var(--accent-bgc);
