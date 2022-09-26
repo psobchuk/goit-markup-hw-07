@@ -93,6 +93,40 @@ img {
   padding-bottom: 94px;
 }
 
+/* Приховування заголовку */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  white-space: nowrap;
+}
+
+/* Заголовки секцій */
+.section__title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: var(--ls-3);
+
+  margin-bottom: 50px;
+}
+
+/* Набір карток */
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.cards-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 .mb10 {
   margin-bottom: 10px;
 }
@@ -139,6 +173,43 @@ img {
   margin-right: 93px;
 }
 
+.header__contacts {
+  font-weight: 500;
+  font-size: var(--main-txt-size);
+  line-height: var(--line-h);
+  letter-spacing: var(--ls-2);
+  color: var(--contacts-txt-color);
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__icon {
+  margin-right: 10px;
+}
+
+.header__item > .header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-txt-color);
+  fill: currentColor;
+  transition: color 250ms var(--timing-function);
+}
+
+/* Навігація */
 .nav {
   margin-right: auto;
 }
@@ -185,42 +256,6 @@ img {
   opacity: 1;
 }
 
-.header__contacts {
-  font-weight: 500;
-  font-size: var(--main-txt-size);
-  line-height: var(--line-h);
-  letter-spacing: var(--ls-2);
-  color: var(--contacts-txt-color);
-}
-
-.header__item {
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-}
-
-.header__item:last-child {
-  margin-right: 0;
-}
-
-.header__icon {
-  margin-right: 10px;
-}
-
-.header__item > .header__item:last-child {
-  margin-right: 0;
-}
-
-.header__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--secondary-txt-color);
-  fill: currentColor;
-  transition: color 250ms var(--timing-function);
-}
-
 .nav__link--current,
 .nav__link:hover,
 .nav__link:focus,
@@ -229,7 +264,11 @@ img {
   color: var(--accent-txt-color);
 }
 
-/* Hero */
+/**
+  |============================
+  | Hero
+  |============================
+*/
 .hero {
   background-color: var(--dark-bgc);
   text-align: center;
@@ -325,7 +364,7 @@ img {
   padding: 40px;
 }
 
-.modal__btn {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -344,8 +383,8 @@ img {
   transition: background-color 250ms var(--timing-function);
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__button:hover,
+.modal__button:focus {
   cursor: pointer;
   fill: var(--accent-bgc);
   transition: fill 250ms var(--timing-function);
@@ -495,45 +534,11 @@ img {
   transition: background-color 250ms var(--timing-function);
 }
 
-/* Приховування заголовку */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  white-space: nowrap;
-}
-
-/* Заголовки секцій */
-.section__title {
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: var(--ls-3);
-
-  margin-bottom: 50px;
-}
-
 /**
   |============================
-  | Набір карток
+  | Особливості
   |============================
 */
-.cards-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
-}
-
-.cards-set-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
-
-/* Особливості */
 .features {
   padding-bottom: 0;
 }
@@ -634,6 +639,7 @@ img {
   margin-bottom: 16px;
 }
 
+/* Соціальні кнопки */
 .social.list {
   display: flex;
   justify-content: center;
@@ -666,8 +672,19 @@ img {
   fill: #ffffff;
 }
 
-/* Наші постійні клієнти */
+.social__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
+.social__link--dark .social__icon {
+  fill: #ffffff;
+}
+
+/**
+  |============================
+  | Наші постійні клієнти
+  |============================
+*/
 .client__list {
   --items: 6;
 }
@@ -696,7 +713,11 @@ img {
   border-color: var(--accent-bgc);
 }
 
-/* Футер */
+/**
+  |============================
+  | Футер
+  |============================
+*/
 .footer {
   background-color: var(--dark-bgc);
 
@@ -717,18 +738,10 @@ img {
   margin-bottom: 0;
 }
 
-.footer > .container {
+.footer__container {
   display: flex;
   gap: 93px;
   align-items: baseline;
-}
-
-.social__link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social__link--dark .social__icon {
-  fill: #ffffff;
 }
 
 .map__link {
