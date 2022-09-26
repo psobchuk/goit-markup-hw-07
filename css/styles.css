@@ -784,7 +784,7 @@ img {
   display: flex;
 }
 
-.subscribe-form_button {
+.subscribe-form__button {
   display: flex;
   align-items: center;
   width: 200px;
@@ -803,7 +803,7 @@ img {
   transition: opacity 250ms var(--timing-function);
 }
 
-.subscribe-form_button:hover {
+.subscribe-form__button:hover {
   cursor: pointer;
 }
 
