@@ -91,7 +91,8 @@
     opacity 250ms var(--timing-function);
 }
 
-.projects__card:hover .overlay {
+.projects__link:hover .overlay,
+.projects__link:focus .overlay {
   transform: translateY(0%);
 }
 
