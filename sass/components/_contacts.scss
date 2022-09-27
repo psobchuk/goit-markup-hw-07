@@ -17,11 +17,8 @@
 
 .contacts__mail-link,
 .contacts__tel-link {
-  font-size: var(--main-txt-size);
-  line-height: calc(24 / 14);
-  letter-spacing: var(--ls-3);
+  @extend .contacts__map-link;
   color: var(--contacts-txt-color);
-  font-style: normal;
 
   transition: color 250ms var(--timing-function);
 

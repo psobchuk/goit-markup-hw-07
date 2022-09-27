@@ -103,21 +103,24 @@
   margin-right: 8px;
 }
 
-.regform__checked-icon {
-  opacity: 0;
-  transition: opacity 250ms var(--timing-function);
-}
-
-.regform__checkbox:checked + .regform__checkbox-icon .regform__checked-icon {
-  opacity: 1;
+.regform__checkbox {
+  &:checked + .regform__checkbox-icon {
+    .regform__checked-icon {
+      opacity: 1;
+    }
+    .regform__unchecked-icon {
+      opacity: 0;
+    }
+  }
 }
 
 .regform__unchecked-icon {
   transition: opacity 250ms var(--timing-function);
 }
 
-.regform__checkbox:checked + .regform__checkbox-icon .regform__unchecked-icon {
+.regform__checked-icon {
   opacity: 0;
+  transition: opacity 250ms var(--timing-function);
 }
 
 .regform__checkbox:focus + .regform__checkbox-icon {

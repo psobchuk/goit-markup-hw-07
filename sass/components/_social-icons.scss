@@ -29,12 +29,12 @@
   &:focus .social__icon {
     fill: var(--main-bgc);
   }
-}
 
-.social__link--dark {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+  &--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
-.social__link--dark .social__icon {
-  fill: var(--main-bgc);
+  &--dark .social__icon {
+    fill: var(--main-bgc);
+  }
 }

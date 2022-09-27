@@ -19,17 +19,17 @@
   .container {
     width: 696px;
   }
+}
 
-  &__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: var(--ls-6);
-    text-transform: uppercase;
-    color: var(--main-bgc);
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: var(--ls-6);
+  text-transform: uppercase;
+  color: var(--main-bgc);
 
-    margin-bottom: 45px;
-  }
+  margin-bottom: 45px;
 }
 
 .hero__button {
